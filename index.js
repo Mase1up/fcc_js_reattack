@@ -3,9 +3,7 @@
 let count = 0;
 
 // Psuedo-code to create incrementing button
-// Initialize count @ 0
-// Listen for clicks on increment button
-// When clicked, increment the count variable
+
 // change the count-el to reflect new count
 
 function increment() {
@@ -13,15 +11,3 @@ function increment() {
     console.log(count)
 }
 
-
-let lapsCompleted = 0;
-
-function lapComplete() {
-    lapsCompleted = lapsCompleted + 1;
-}
-
-lapComplete();
-lapComplete();
-lapComplete();
-
-console.log(lapsCompleted);
