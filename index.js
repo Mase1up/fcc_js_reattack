@@ -1,8 +1,6 @@
 //document.getElementById("count-el").innerText=5
 
-// let count = 5;
-// count = count + 1;
-// console.log(count);
+let count = 0;
 
 // Psuedo-code to create incrementing button
 // Initialize count @ 0
@@ -11,6 +9,18 @@
 // change the count-el to reflect new count
 
 function increment() {
-    // count = count + 1;
-    console.log("The button was clicked")
+    count = count + 1;
+    console.log(count)
 }
+
+
+let lap1 = 34;
+let lap2 = 33;
+let lap3 = 36;
+
+function totalTime() {
+    let totalTime = lap1 + lap2 + lap3;
+    console.log(totalTime);
+}
+
+totalTime();
