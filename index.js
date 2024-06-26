@@ -10,3 +10,7 @@
 // When clicked, increment the count variable
 // change the count-el to reflect new count
 
+function increment() {
+    // count = count + 1;
+    console.log("The button was clicked")
+}
