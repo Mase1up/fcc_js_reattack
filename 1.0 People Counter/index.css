@@ -16,6 +16,10 @@ h2 {
 
 }
 
+p {
+    font-weight: bold;
+}
+
 button {
     border: none;
     padding-top: 10px;
