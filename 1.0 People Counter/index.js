@@ -8,7 +8,8 @@ function increment() {
 }
 
 function save() {
-    saveEl.innerText += " " + count + " -";
+    newEntry = " " + count + " -";
+    saveEl.innerText += newEntry;
     count = 0;
     countEl.innerText = count;
     // console.log(saveEl);
