@@ -11,8 +11,8 @@ let result = document.getElementById("sum-el")
 // Inside the function perform the action, then render result in sum-el paragraph.
 
 function add() {
-    console.log("clicked");
-    result.textContent = num1 + num2;
+    let total = num1 + num2;
+    result.textContent = "Sum: " + total;
 }
 
 function subtract() {
