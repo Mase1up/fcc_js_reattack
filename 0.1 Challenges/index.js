@@ -1,17 +1,17 @@
-// Grab the welcome-el paragraph and store it in a variable called welcomeEl
-// Create two variables (name & greeting) that contains your name
-// and the greeting we want to render on the screen
+let myPoints = 3;
 
-// Render the message using .innerText
+function add3Points() {
+    myPoints += 3;
+}
 
-// We want it to say "Welcome back, Mason Keith!"
+function subtract1Point() {
+    myPoints -= 1;
+}
 
-let welcomeEl = document.getElementById("welcome-el"); //Grab the piece I want to work on
-let name = "Mason Keith";
-let greeting = "Welcome back, " + name + "!";
+add3Points();
+add3Points();
+add3Points();
+subtract1Point();
+subtract1Point();
 
-// console.log(greeting) Checked to make sure greeting is logging correctly
-
-welcomeEl.innerText = greeting;
-
-welcomeEl.innerText += " emoji";
+console.log(myPoints);
