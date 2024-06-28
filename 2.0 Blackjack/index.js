@@ -1,6 +1,6 @@
 
-let firstCard = 10;
-let secondCard = 6;
+let firstCard = getRandomCard();
+let secondCard = getRandomCard();
 let cards = [firstCard, secondCard]; // array to hold cards
 let isAlive = true;
 let hasBlackjack = false;
@@ -8,11 +8,12 @@ let sum = firstCard + secondCard;
 let message = "";
 let messageEl = document.getElementById("message-el");
 let sumEl = document.getElementById("sum-el");
-// let sumEl = document.querySelector("#sum-el");
 let cardsEl = document.getElementById("cards-el");
 
-
-// console.log(sum);
+// Create a function, getRandomCard(), that returns the number 5
+function getRandomCard() {
+    return 5;
+}
 
 function startGame() {
     isAlive = true;
@@ -41,7 +42,7 @@ function renderGame() {
 }
 
 function newCard() {
-    let newCard = 5
+    let newCard = getRandomCard();
     sum += newCard;
     cards.push(newCard);
     console.log(cards);
