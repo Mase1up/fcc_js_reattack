@@ -14,3 +14,4 @@ let myAttributes = [
     "Best blackjack online, voted on by Loudoun web developers"
 ]
 
+console.log(myAttributes.length)
