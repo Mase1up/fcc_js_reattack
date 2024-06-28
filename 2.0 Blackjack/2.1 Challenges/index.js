@@ -18,3 +18,5 @@ let flooredNumber = Math.floor(3.45632);
 console.log(flooredNumber);
 
 // It truncates everthing to the right of the decimal.  
+// This isn't quite accurate, it actually moves to the leftmost possible integer
+// on the number line.  If it were -2.36 it would become -3
