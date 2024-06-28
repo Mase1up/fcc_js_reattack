@@ -1,11 +1,5 @@
-// Count to ten
+// Create a loop counting from 10 to 100 in 10's
 
-// Need to specify:
-//     Where to START counting ?
-//     Where to FINISH counting ?
-//     What is the STEP SIZE ?
-
-//   START      FINISH  STEP SIZE
-for (let i = 1; i < 11; i += 1) {
+for (let i = 10; i < 101; i += 10) {
     console.log(i);
 }
