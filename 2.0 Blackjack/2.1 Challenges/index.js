@@ -1,15 +1,16 @@
-// Check if person is old enough to get bday card from the king (100)
-let age = 101;
+// Arrays - ordered list of items
 
-// if less than 100 -> Not eligible
-// else if greater than 100 -> Not eligible, already rx'd
-// else -> Here is your bday card
+let featuredPosts = [
+    "Check out my Netflix clone",
+    "Here's code for my project",
+    "How many glizzies can one person eat?"
+];
 
-if (age < 100) {
-    console.log("Not eligible, too young");
-} else if (age > 100) {
-    console.log("Not eligible, you already received one");
-} else {
-    console.log("Here is your birthday card from the king!");
-}
+// Create an array listing your experiences, education, skills, etc.
+
+let myAttributes = [
+    "Here are my amazing website builds",
+    "Interactive Javascript powered passenger counter",
+    "Best blackjack online, voted on by Loudoun web developers"
+]
 
