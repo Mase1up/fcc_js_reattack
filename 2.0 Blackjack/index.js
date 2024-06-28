@@ -6,8 +6,9 @@ let hasBlackjack = false;
 let sum = firstCard + secondCard;
 let message = "";
 let messageEl = document.getElementById("message-el");
-let sumEl = document.getElementById("sum-el");
-let cardsEl = document.getElementById("cards-el");
+// let sumEl = document.getElementById("sum-el");
+let sumEl = document.querySelector("#sum-el");
+// let cardsEl = document.getElementById("cards-el");
 
 // console.log(sum);
 
@@ -15,6 +16,7 @@ function startGame() {
     isAlive = true;
     hasBlackjack = false;
     sumEl.textContent = "Sum: " + sum;
+    // sumEl.textContent += sum; // No space after Sum:
 
     if (sum < 21) {
         message = "Do you want to hit?";
