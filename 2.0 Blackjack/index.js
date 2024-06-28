@@ -1,6 +1,6 @@
 
 let firstCard = 10;
-let secondCard = 11;
+let secondCard = 6;
 let isAlive = true;
 let hasBlackjack = false;
 let sum = firstCard + secondCard;
@@ -15,6 +15,10 @@ let cardsEl = document.getElementById("cards-el");
 function startGame() {
     isAlive = true;
     hasBlackjack = false;
+    renderGame();
+}
+
+function renderGame() {
     cardsEl.textContent = "Cards: " + firstCard + ", " + secondCard;
     sumEl.textContent = "Sum: " + sum;
 
@@ -34,5 +38,5 @@ function startGame() {
 function newCard() {
     let newCard = 5
     sum += newCard;
-    startGame();
+    renderGame();
 }
