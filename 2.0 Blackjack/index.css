@@ -19,9 +19,10 @@ h1 {
 button {
     background-color: goldenrod;
     border: none;
-    color: green;
-    height: 40px;
+    color: #016f32;
+    padding: 7px;
     width: 200px;
     font-size: 1.2rem;
     font-weight: bold;
+    border-radius: 3px;
 }
