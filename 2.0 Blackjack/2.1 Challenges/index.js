@@ -1,17 +1,11 @@
-// Arrays - ordered list of items
-
-let featuredPosts = [
-    "Check out my Netflix clone",
-    "Here's code for my project",
-    "How many glizzies can one person eat?"
+let messages = [
+    "Hey, how's it going?",
+    "I'm great, thank you!  How about you?",
+    "All good, been working on my portfolio lately."
 ];
 
-// Create an array listing your experiences, education, skills, etc.
+let newMessage = "Same here!";
 
-let myAttributes = [
-    "Here are my amazing website builds",
-    "Interactive Javascript powered passenger counter",
-    "Best blackjack online, voted on by Loudoun web developers"
-]
+messages.push(newMessage);
 
-console.log(myAttributes.length)
+console.log(messages);
