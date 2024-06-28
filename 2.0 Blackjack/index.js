@@ -5,6 +5,7 @@ let isAlive = true;
 let hasBlackjack = false;
 let sum = firstCard + secondCard;
 let message = "";
+let messageEl = document.getElementById("message-el");
 
 // console.log(sum);
 
@@ -21,6 +22,6 @@ function startGame() {
         isAlive = false;
         message = "Sorry, you busted.  Play again?";
     }
-
+    messageEl.textContent = message;
     // console.log(message);
 }
