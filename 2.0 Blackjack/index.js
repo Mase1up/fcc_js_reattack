@@ -1,14 +1,16 @@
 
-let firstCard = getRandomCard();
-let secondCard = getRandomCard();
-let cards = [firstCard, secondCard]; // array to hold cards
-let isAlive = true;
+let firstCard
+let secondCard
+let cards = []; // array to hold cards
+let sum
+let isAlive = false;
 let hasBlackjack = false;
-let sum = firstCard + secondCard;
 let message = "";
 let messageEl = document.getElementById("message-el");
 let sumEl = document.getElementById("sum-el");
 let cardsEl = document.getElementById("cards-el");
+
+console.log(cards);
 
 // Make this return number between 1 - 13
 function getRandomCard() {
@@ -25,6 +27,11 @@ function getRandomCard() {
 function startGame() {
     isAlive = true;
     hasBlackjack = false;
+    firstCard = getRandomCard();
+    cards.push(firstCard);
+    secondCard = getRandomCard();
+    cards.push(secondCard);
+    sum = firstCard + secondCard;
     renderGame();
 }
 
