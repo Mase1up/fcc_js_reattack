@@ -1,5 +1,20 @@
-// Create a loop counting from 10 to 100 in 10's
+// For loop counting 
 
-for (let i = 10; i < 101; i += 10) {
-    console.log(i);
+let messages = [
+    "Hey, how's it going?",
+    "Great, how about you?",
+    "All good, working on portfolio.",
+    "Same here!"
+]
+
+console.log(messages);
+
+// DRY - Don't Repeat Yourself
+// console.log(messages[0]);
+// console.log(messages[1]);
+// console.log(messages[2]);
+// console.log(messages[3]);
+
+for (let i = 0; i < messages.length; i += 1) {
+    console.log(messages[i]);
 }
