@@ -1,11 +1,11 @@
-let messages = [
-    "Hey, how's it going?",
-    "I'm great, thank you!  How about you?",
-    "All good, been working on my portfolio lately."
-];
+// Count to ten
 
-let newMessage = "Same here!";
+// Need to specify:
+//     Where to START counting ?
+//     Where to FINISH counting ?
+//     What is the STEP SIZE ?
 
-messages.push(newMessage);
-
-console.log(messages);
+//   START      FINISH  STEP SIZE
+for (let i = 1; i < 11; i += 1) {
+    console.log(i);
+}
