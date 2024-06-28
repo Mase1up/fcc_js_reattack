@@ -30,3 +30,7 @@ function startGame() {
     messageEl.textContent = message;
     // console.log(message);
 }
+
+function newCard() {
+
+}
