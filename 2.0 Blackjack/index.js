@@ -32,5 +32,7 @@ function startGame() {
 }
 
 function newCard() {
-
+    let newCard = 5
+    sum += newCard;
+    startGame();
 }
