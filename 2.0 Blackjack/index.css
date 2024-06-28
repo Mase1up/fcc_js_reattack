@@ -1,14 +1,9 @@
-* {
-    margin: 0;
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 h1 {
-    margin-top: 15px;
-    margin-left: 10px;
+    color: goldenrod;
 }
 
-p {
-    margin-top: 10px;
-    margin-bottom: 5px;
-    margin-left: 10px;
-}
+#message-el {}
