@@ -1,7 +1,7 @@
 
-// Generating random numbers
+// Simulate a Die Roll
 
-let randomNumber = Math.random();
+let randomNumber = Math.random() * 6;
 
 console.log(randomNumber);
 
@@ -9,9 +9,7 @@ console.log(randomNumber);
 What does Math.random() actually do?
 
 Your answer:
-Looks like a random number MANY digits long between 0-1
+Should return a random number between 0 and 5.999 repeating
 
 
-True answer:
-Random number from 0 to .999999 repeating
 */
