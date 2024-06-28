@@ -1,20 +1,7 @@
-// For loop counting 
+// Create for loop to log all cards in array, dynamically
 
-let messages = [
-    "Hey, how's it going?",
-    "Great, how about you?",
-    "All good, working on portfolio.",
-    "Same here!"
-]
+let cards = [7, 3, 9, 10];
 
-console.log(messages);
-
-// DRY - Don't Repeat Yourself
-// console.log(messages[0]);
-// console.log(messages[1]);
-// console.log(messages[2]);
-// console.log(messages[3]);
-
-for (let i = 0; i < messages.length; i += 1) {
-    console.log(messages[i]);
+for (i = 0; i < cards.length; i += 1) {
+    console.log(cards[i]);
 }
