@@ -1,6 +1,7 @@
 
 let firstCard = 10;
 let secondCard = 6;
+let cards = [firstCard, secondCard]; // array to hold cards
 let isAlive = true;
 let hasBlackjack = false;
 let sum = firstCard + secondCard;
@@ -9,18 +10,18 @@ let messageEl = document.getElementById("message-el");
 let sumEl = document.getElementById("sum-el");
 // let sumEl = document.querySelector("#sum-el");
 let cardsEl = document.getElementById("cards-el");
-let cards = [firstCard, secondCard]; // array to hold cards
+
 
 // console.log(sum);
 
 function startGame() {
     isAlive = true;
     hasBlackjack = false;
+    cardsEl.textContent = "Cards: " + cards[0] + ", " + cards[1];
     renderGame();
 }
 
 function renderGame() {
-    cardsEl.textContent = "Cards: " + cards[0] + " " + cards[1];
     sumEl.textContent = "Sum: " + sum;
     if (sum < 21) {
         message = "Do you want to hit?";
