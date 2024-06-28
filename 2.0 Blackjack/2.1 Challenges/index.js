@@ -1,30 +1,17 @@
-let player1Time = 102;
-let player2Time = 107;
 
-// function getFastestRaceTime() {
-//     if (player1Time < player2Time) {
-//         return player1Time;
-//     } else if (player2Time < player1Time) {
-//         return player2Time;
-//     } else {
-//         return "It was a tie at " + player1Time;
-//     }
-// }
+// Generating random numbers
 
-// // This worked, but not the way the function would be used
-// // console.log(getFastestRaceTime());
+let randomNumber = Math.random();
 
-// let fastestRaceTime = getFastestRaceTime();
+console.log(randomNumber);
 
-// console.log(fastestRaceTime);
+/*
+What does Math.random() actually do?
 
-// Write function that returns total race time
-// Invoke func and store return in new var
-// Log the var out
+Your answer:
+Looks like a random number MANY digits long between 0-1
 
-function totalRaceTime() {
-    return player1Time + player2Time;
-}
 
-let totalTime = totalRaceTime();
-console.log(totalTime);
+True answer:
+Random number from 0 to .999999 repeating
+*/
