@@ -15,12 +15,12 @@ let cardsEl = document.getElementById("cards-el");
 function startGame() {
     isAlive = true;
     hasBlackjack = false;
+    cardsEl.textContent = "Cards: " + firstCard + ", " + secondCard;
+    sumEl.textContent = "Sum: " + sum;
     renderGame();
 }
 
 function renderGame() {
-    cardsEl.textContent = "Cards: " + firstCard + ", " + secondCard;
-    sumEl.textContent = "Sum: " + sum;
 
     if (sum < 21) {
         message = "Do you want to hit?";
@@ -38,5 +38,8 @@ function renderGame() {
 function newCard() {
     let newCard = 5
     sum += newCard;
+    sumEl.textContent = "Sum: " + sum;
+    cardsEl.textContent += ", " + newCard;
+
     renderGame();
 }
