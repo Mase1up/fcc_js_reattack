@@ -1,10 +1,11 @@
-let likesDocumentaries = true;
-let likesStartups = false;
+// Create object for airBnB listings
 
-function recommendMovie() {
-    console.log("Hey, check out this new film we think you'll like!");
+let listing = {
+    superhost: true,
+    hostName: "Per",
+    price: 190,
+    tags: ["castle", "fan-favorite"]
 }
 
-if (likesDocumentaries || likesStartups) {
-    recommendMovie();
-}
+console.log(listing.price);
+console.log(listing.tags);
