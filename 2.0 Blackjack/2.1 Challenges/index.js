@@ -1,19 +1,26 @@
-// Create a person object containing 3 keys: name, age, and country
+// Conditional statement to log out the discount the passenger
+// will get based on age
 
-let person = {
-    name: "Mason",
-    age: 41,
-    country: "USA"
+// less than 6 years old -> free
+// 6-17 -> child discount
+// 18-26 -> student discount
+// 27-66 -> full price
+// over 66 -> senior citizen discount
+
+let age = 69;
+
+function checkDiscount() {
+    if (age < 6) {
+        return "free";
+    } else if (age < 18) {
+        return "child discount";
+    } else if (age < 27) {
+        return "student discount";
+    } else if (age < 67) {
+        return "full price";
+    } else {
+        return "senior citizen discount";
+    }
 }
 
-// Create a function logData() that uses the person object to create a
-// string in the following format:
-// "Mason is 41 years old and lives in USA"
-
-function logData() {
-    console.log(person.name + " is " + person.age + " years old and lives in " + person.country + ".")
-}
-
-//Call the logData() function to verify it works
-
-logData();
+console.log(checkDiscount());
