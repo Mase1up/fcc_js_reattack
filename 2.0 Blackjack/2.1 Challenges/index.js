@@ -1,13 +1,10 @@
-let hasSolvedChallenge = false;
-let hasHintsLeft = false;
+let likesDocumentaries = true;
+let likesStartups = false;
 
-// Create an if statement that checks if both vars are false
-// If so, run showSolution() func.
-
-function showSolution() {
-    console.log("Showing the solution...")
+function recommendMovie() {
+    console.log("Hey, check out this new film we think you'll like!");
 }
 
-if (hasSolvedChallenge === false && hasHintsLeft === false) {
-    showSolution();
+if (likesDocumentaries || likesStartups) {
+    recommendMovie();
 }
