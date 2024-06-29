@@ -1,0 +1,37 @@
+body {
+    text-align: center;
+}
+
+div {
+    margin: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+#apple-shelf {
+    background-color: lightcoral;
+    width: 50%;
+    height: 35px;
+    margin-top: 50px;
+}
+
+#orange-shelf {
+    background-color: lightsalmon;
+    width: 50%;
+    height: 35px;
+}
+
+button {
+    margin-top: 20px;
+    height: 50px;
+    width: 150px;
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: lightblue;
+    border: none;
+    border-radius: 25px;
+    color: rgb(241, 245, 231);
+
+}
