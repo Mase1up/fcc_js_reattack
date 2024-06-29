@@ -27,6 +27,7 @@ function getRandomCard() {
 function startGame() {
     isAlive = true;
     hasBlackjack = false;
+    cards = [];
     firstCard = getRandomCard();
     cards.push(firstCard);
     secondCard = getRandomCard();
@@ -56,12 +57,12 @@ function renderGame() {
 }
 
 function newCard() {
-    let newCard = getRandomCard();
-    sum += newCard;
-    cards.push(newCard);
-    console.log(cards);
-    sumEl.textContent = "Sum: " + sum;
-    cardsEl.textContent += ", " + newCard;
+    // Only allow new card if player is alive, and does not have blackjack
+    if (isAlive === true && hasBlackjack === false) {
+        let newCard = getRandomCard();
+        sum += newCard;
+        cards.push(newCard);
+        renderGame();
+    }
 
-    renderGame();
 }
