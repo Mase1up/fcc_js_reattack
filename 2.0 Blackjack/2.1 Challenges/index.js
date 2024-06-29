@@ -1,15 +1,13 @@
+let hasSolvedChallenge = false;
+let hasHintsLeft = false;
 
-// Simulate a Die Roll
+// Create an if statement that checks if both vars are false
+// If so, run showSolution() func.
 
-// let randomNumber = (Math.floor(Math.random() * 6)) + 1;
-
-// console.log(randomNumber);
-
-// Create function to return 1-6 at random
-
-function rollDice() {
-    let randomResult = Math.floor(Math.random() * 6) + 1;
-    return randomResult;
+function showSolution() {
+    console.log("Showing the solution...")
 }
 
-console.log(rollDice());
+if (hasSolvedChallenge === false && hasHintsLeft === false) {
+    showSolution();
+}
