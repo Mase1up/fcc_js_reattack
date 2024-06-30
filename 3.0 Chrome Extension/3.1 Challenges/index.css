@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -18,6 +19,9 @@ green color -> #5f9341
 input {
     width: 100%;
     height: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #5f9341
 }
 
 button {
@@ -28,4 +32,5 @@ button {
     background-color: #5f9341;
     border: none;
     color: white;
+    font-size: 1.1rem
 }
