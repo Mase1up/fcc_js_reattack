@@ -2,7 +2,7 @@
 // 2. Add click event listener to the box
 // 3. Log "I want to open the box!" when clicked
 
-let boxEl = document.getElementById("box-el");
+const boxEl = document.getElementById("box-el");
 
 boxEl.addEventListener("click", function () {
     console.log("I want to open the box!");
